@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/title_layout">
+        <com.manggeek.android.geek.view.BlackBackView
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            style="@style/title_text"
+            android:text="常用解析字符" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:background="@drawable/bg_radius_white_10"
+                android:layout_margin="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="top"
+                android:hint="请输入需要转换的内容"/>
+
+            <TextView
+                android:id="@+id/select_type"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorWhite"
+                android:text="请选择需要转换的类型"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_radius_confirm_8"
+                android:text="确定"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="转换结果为:"/>
+
+            <TextView
+                android:id="@+id/show_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                tools:text="result"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

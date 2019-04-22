@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2ec55b</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- 淡黄色-->
+    <color name="coloFaintYellow">#FFDEAD</color>
+    <!-- 分割线-->
+    <color name="colorLine">#ebebeb</color>
+    <!-- 黑色字体-->
+    <color name="colorText">#333333</color>
+    <!-- 蓝色背景-->
+    <color name="colorBackground">#479AFF</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <!--colorWhite-->
+</resources>

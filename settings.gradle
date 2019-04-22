@@ -1,0 +1,1 @@
+include ':app', ':mobileauthlib', ':newsapp', 'manggeekLib', "lib-zxing", ':JPushExample'

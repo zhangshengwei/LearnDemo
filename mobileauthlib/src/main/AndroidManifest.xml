@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="testdemo.com.mobileauthlib" >
+
+    <!--  ****** 一键登录所需的权限 *****-->
+    <uses-permission android:name="android.permission.INTERNET" />                      <!-- 允许应用程序联网，用于访问网关和认证服务器 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />              <!-- 获取imsi用于判断双卡和换卡 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />             <!-- 允许程序访问WiFi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />          <!-- 获取网络状态，判断是否数据、wifi等 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />          <!-- 允许程序改变网络连接状态 -->
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.cmic.sso.sdk.activity.OAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="unspecified"
+            android:launchMode="singleTop">
+        </activity>
+        <!-- required -->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.BufferActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="unspecified"
+            android:launchMode="singleTop">
+        </activity>
+        <!-- required -->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="unspecified"
+            android:launchMode="singleTop">
+        </activity>
+    </application>
+
+</manifest>

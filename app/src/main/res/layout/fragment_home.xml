@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="HomeFragment"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb"/>
+
+    <RadioGroup
+        android:id="@+id/option"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 原全部-->
+        <RadioButton
+            android:id="@+id/firstRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="第一页"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <!-- 原待接单-->
+        <RadioButton
+            android:id="@+id/secondRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="第二页"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"/>
+
+        <!-- 原已接单-->
+        <RadioButton
+            android:id="@+id/thirdRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="第三页"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/fourthRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="第四页"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"/>
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

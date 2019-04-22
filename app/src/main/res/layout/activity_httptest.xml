@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout style="@style/title_layout">
+        <com.manggeek.android.geek.view.BlackBackView
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            style="@style/title_text"
+            android:text="测试模块种类" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/show_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="awefaefaw"/>
+
+    <!-- 一键登录-->
+    <TextView
+        android:id="@+id/python"
+        style="@style/text_type"
+        android:text="pythonHttp"/>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout style="@style/title_layout">
+        <TextView
+            style="@style/title_text"
+            android:text="测试模块种类" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:id="@+id/goto_activity"-->
+                <!--style="@style/text_type"-->
+                <!--android:text="Activity模块测试"/>-->
+
+            <TextView
+                android:id="@+id/goto_fragment"
+                style="@style/text_type"
+                android:text="Fragment模块测试"/>
+
+            <TextView
+                android:id="@+id/goto_service"
+                style="@style/text_type"
+                android:text="Service测试模块"/>
+
+            <TextView
+                android:id="@+id/goto_util"
+                style="@style/text_type"
+                android:text="常用解析字符"/>
+
+            <TextView
+                android:id="@+id/data_util"
+                style="@style/text_type"
+                android:text="数据格式解析"/>
+
+            <!-- 前往开启权限  authority-->
+            <TextView
+                android:id="@+id/authority"
+                style="@style/text_type"
+                android:text="权限通知测试"/>
+
+            <!-- 二维码-->
+            <TextView
+                android:id="@+id/scan_pic"
+                style="@style/text_type"
+                android:text="二维码识别 检测"/>
+
+            <!-- 一键登录-->
+            <TextView
+                android:id="@+id/login_auto"
+                style="@style/text_type"
+                android:text="移动SDK 一键登录"/>
+
+            <!-- 接口调试-->
+            <TextView
+                android:id="@+id/python_http"
+                style="@style/text_type"
+                android:text="Python服务接口"/>
+
+            <!-- 刷新测试-->
+            <TextView
+                android:id="@+id/refresh_rl"
+                style="@style/text_type"
+                android:text="UI模块测试"/>
+
+            <!-- 设备相关信息-->
+            <TextView
+                android:id="@+id/mobile_info"
+                style="@style/text_type"
+                android:text="设备相关信息"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

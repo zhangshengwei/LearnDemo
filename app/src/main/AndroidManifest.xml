@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manggeek.learndemo">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-sdk tools:overrideLibrary="cn.bingoogolapple.photopicker,cn.bingoogolapple.androidcommon.adapter" />-->
+
+    <!-- 手机震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 友盟所需权限-->
+
+    <!-- 移动认证所需要的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />       <!--获取imsi用于判断双卡和换卡-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- Growing io 所需权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <uses-permission android:name="android.permission.NOTI"/>
+
+    <application
+        android:name=".control.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LearnDemo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTranslateTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+
+        <!-- 首页！！！-->
+        <activity android:name=".SelectActivity"
+            android:screenOrientation="portrait">
+            <!-- portrait 强制显示竖屏-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- activity 的首页-->
+        <activity android:name=".activityLearn.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Fragment 的首页-->
+        <activity android:name=".fragmentLearn.FragmentActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 权限开启 的首页-->
+        <activity android:name=".activityLearn.AuthorityActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- utilsActivity 的首页-->
+        <activity android:name=".otherLearn.UtilsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Data 数据解析-->
+        <activity android:name=".activityLearn.DataUtilActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- ScanPicActivity 二维码-->
+        <activity android:name=".activityLearn.ScanPicActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 移动SDK 一键登录 的首页-->
+        <activity android:name=".activityLearn.AutoLoginActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- cityList -->
+        <activity android:name=".activityLearn.CityListActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 网络请求 -->
+        <activity android:name=".activityLearn.HttpTestActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- UI设计-->
+        <activity android:name=".activityLearn.UIActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 手机相关信息-->
+        <activity android:name=".activityLearn.MobileInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 刷新/加载更多 -->
+        <activity android:name=".activityLearn.UI.SmartRefreshActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 卡片上下滑动-->
+        <activity android:name=".activityLearn.UI.EchelonActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 卡片旋转-->
+        <activity android:name=".activityLearn.UI.RotateActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 卡片组侧滑删除-->
+        <activity android:name=".activityLearn.UI.SlidRemoveActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 卡片组侧滑删除-->
+        <activity android:name=".activityLearn.UI.LuckTurnTableActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

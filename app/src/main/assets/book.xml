@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Books>
+
+  <Book name="康师傅的亿万帝国" >
+
+    <Title>
+      　据周元根的小学同学回忆，大约7岁那年，周元根开始读小学，由于和别人重名，于是改了名字。但他在村里一直沿用“周元根”这个名字，周家祖坟的5块墓碑上，刻的也是“周元根”这个名字。
+    </Title>
+    <Picture>
+      http://p.qpic.cn/ninja/0/ninja1406636943/0
+    </Picture>
+  </Book>
+
+  <Book name="徐才厚受贿额特别巨大" >
+
+    <Title>
+      根据最高人民检察院授权,军事检察院对中央军委原副主席徐才厚以涉嫌受贿犯罪立案侦查。2014年10月27日,对该案侦查终结,移送审查起诉。
+
+    </Title>
+
+    <Picture>
+      http://www.sinaimg.cn/dy/slidenews/1_img/2014_44/2841_506865_709392.jpg
+
+    </Picture>
+  </Book>
+  <Book name="发改委副司长魏鹏远" >
+
+    <Title>
+      最高人民检察院反贪污贿赂总局局长徐进辉今日表示，煤炭司副司长魏鹏远家中搜查发现现金折合人民币2亿余元，成为建国以来检察机关一次起获赃款现金数额最大的案件。
+
+    </Title>
+
+    <Picture>
+      http://img1.cache.netease.com/catchpic/D/DC/DCB2315FD0F50C665BB1474768192642.jpg
+
+    </Picture>
+  </Book>
+
+</Books>

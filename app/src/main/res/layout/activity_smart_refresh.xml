@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout style="@style/title_layout">
+        <com.manggeek.android.geek.view.BlackBackView
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            style="@style/title_text"
+            android:text="自定義刷新加載更多佈局" />
+    </RelativeLayout>
+
+
+    <com.manggeek.learndemo.View.MySmartRefreshLayout
+        android:id="@+id/my_smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+        <!--<ListView-->
+            <!--android:id="@+id/listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+    </com.manggeek.learndemo.View.MySmartRefreshLayout>
+</LinearLayout>
