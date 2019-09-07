@@ -79,7 +79,7 @@ public class AuthorityActivity extends BaseActivity {
         @Override
         public void onClick(View view) {
             if (view == notificationTv){
-//                OpenNotification();
+                OpenNotification();
             }else if (view == autoOpenAuthorityTv){
                 if (!permissionList.isEmpty()) {
                     ActivityCompat.requestPermissions(mActivity, permissionList.toArray(new String[permissionList.size()]), 1);

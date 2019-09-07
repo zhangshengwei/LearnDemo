@@ -9,6 +9,14 @@ public class Book {
     private String title;
     private String picture;
     private String name;
+
+    public Book(String title, String picture, String name) {
+        this.title = title;
+        this.picture = picture;
+        this.name = name;
+    }
+    public Book(){}
+
     public String getName() {
         return name;
     }

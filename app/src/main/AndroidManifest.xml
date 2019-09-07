@@ -103,11 +103,13 @@
 
         <!-- UI设计-->
         <activity android:name=".activityLearn.UIActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-        <!-- 手机相关信息-->
-        <activity android:name=".activityLearn.MobileInfoActivity"
-            android:screenOrientation="portrait"/>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
 
         <!-- 刷新/加载更多 -->
         <activity android:name=".activityLearn.UI.SmartRefreshActivity"
@@ -125,9 +127,16 @@
         <activity android:name=".activityLearn.UI.SlidRemoveActivity"
             android:screenOrientation="portrait"/>
 
-        <!-- 卡片组侧滑删除-->
-        <activity android:name=".activityLearn.UI.LuckTurnTableActivity"
-            android:screenOrientation="portrait"/>
+        <!-- 幸运大转盘-->
+        <activity android:name=".activityLearn.UI.MoveViewActivity"
+            android:screenOrientation="portrait">
+            <!-- portrait 强制显示竖屏-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
     </application>
 
 </manifest>

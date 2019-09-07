@@ -75,22 +75,21 @@ public class DataUtilActivity extends BaseActivity {
             }
         }
     };
+
     //解析xml文件
     private void UtilXML() {
         List<ProvinceModel> provinceList;
-        AssetManager asset = mActivity.getAssets();
         InputStream inputStream;
         try {
             long beginTime = System.currentTimeMillis();
-            inputStream = asset.open("area.xml");
+            // 打开assets目录下的area.xml文件
+            inputStream = mActivity.getAssets().open("area.xml");
             proList = UseDomMethod(inputStream);
             long endTime = System.currentTimeMillis();
             long timeLong = endTime - beginTime;
             time = timeLong+"";
             timeTv.setText("解析所消耗时间:" + time+"  毫秒");
             adapter.notifyDataSetChanged();
-//            inputStream = asset.open("book.xml");
-//            List<Book> books = UseDomTestMethod(inputStream);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -109,7 +108,6 @@ public class DataUtilActivity extends BaseActivity {
             //获取根节点
             Element rootElement = document.getDocumentElement();
             NodeList provinceNodeList = rootElement.getElementsByTagName("province");       //省级节点
-//            PrintUtil.log("http--->nodeList.getLength()(省级数量):"+nodeList.getLength());
             for (int proI = 0; proI < provinceNodeList.getLength(); proI++){
                 ProvinceModel provinceModel = new ProvinceModel();
                 List<CityModel> cityList = new ArrayList<>();
@@ -130,9 +128,6 @@ public class DataUtilActivity extends BaseActivity {
                         Element districElement = (Element) districNodeList.item(districI);
                         districtModel.setName(districElement.getAttribute("name"));
                         districtModel.setZipcode(districElement.getAttribute("zipcode"));
-//                        if (cityI == 0 &&districI == 0){
-//                            PrintUtil.log("http--->省:" + provinceModel.getName() + " 城市:" + cityModel.getName() + "  地区名:" + districtModel.getName()+"  地区编号:"+districtModel.getZipcode());
-//                        }
                         districtList.add(districtModel);
                     }
                     cityModel.setDistrictList(districtList);

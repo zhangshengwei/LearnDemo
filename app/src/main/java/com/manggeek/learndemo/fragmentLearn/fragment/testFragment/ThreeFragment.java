@@ -18,15 +18,13 @@ import com.manggeek.learndemo.R;
  */
 public class ThreeFragment extends GeekFragment {
 
-    private @FindViewById(id = R.id.content)
-    TextView contentTv;
+    private @FindViewById(id = R.id.content) TextView contentTv;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = setContentView(inflater, R.layout.fragment_number_content, container, false);
-//        initData();
-        contentTv.setText("这是第 3 个Fragment");
+        contentTv.setText("是第一页  3  的Fragment");
         return view;
     }
 }

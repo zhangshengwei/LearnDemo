@@ -5,8 +5,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.manggeek.android.geek.GeekFragment;
+import com.manggeek.android.geek.view.FindViewById;
 import com.manggeek.learndemo.R;
 
 /**
@@ -15,16 +17,16 @@ import com.manggeek.learndemo.R;
  * describe:
  */
 public class SecondFragment extends GeekFragment {
+
+    private @FindViewById(id = R.id.content) TextView contentTv;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = setContentView(inflater, R.layout.fragment_second, container, false);
-        initData();
+        View view = setContentView(inflater, R.layout.fragment_third, container, false);
+        contentTv.setText("SecondFragment");
         return view;
     }
-    public void initData() {
-    }
-
 
 
 

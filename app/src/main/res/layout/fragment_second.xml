@@ -4,9 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <RadioGroup
+        android:id="@+id/two_option"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
         android:gravity="center"
-        android:text="ScondFragment"/>
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/_2firstRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="1"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <!-- 原待接单-->
+        <RadioButton
+            android:id="@+id/_2secondRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="2"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"/>
+
+        <!-- 原全部-->
+        <RadioButton
+            android:id="@+id/_3thirdRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_radiobtn_text"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="3"
+            android:textColor="@drawable/selector_main_text"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+    </RadioGroup>
+
+
+    <com.manggeek.learndemo.View.ChildViewPager
+        android:id="@+id/viewpager_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </LinearLayout>

@@ -5,18 +5,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:gravity="center"-->
-        <!--android:text="HomeFragment"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="这是第几个Fragment ? "/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ebebeb"/>
 
     <RadioGroup
-        android:id="@+id/option"
+        android:id="@+id/one_option"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#fff"
@@ -51,34 +52,6 @@
             android:text="第二页"
             android:textColor="@drawable/selector_main_text"
             android:textSize="16sp"/>
-
-        <!-- 原已接单-->
-        <RadioButton
-            android:id="@+id/thirdRb"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:button="@null"
-            android:drawableBottom="@drawable/selector_radiobtn_text"
-            android:gravity="center"
-            android:paddingTop="3dp"
-            android:text="第三页"
-            android:textColor="@drawable/selector_main_text"
-            android:textSize="16sp"/>
-
-        <RadioButton
-            android:id="@+id/fourthRb"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:button="@null"
-            android:drawableBottom="@drawable/selector_radiobtn_text"
-            android:gravity="center"
-            android:paddingTop="3dp"
-            android:text="第四页"
-            android:textColor="@drawable/selector_main_text"
-            android:textSize="16sp"/>
-
     </RadioGroup>
 
     <android.support.v4.view.ViewPager

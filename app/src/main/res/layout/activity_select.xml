@@ -23,20 +23,21 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--<TextView-->
-                <!--android:id="@+id/goto_activity"-->
-                <!--style="@style/text_type"-->
-                <!--android:text="Activity模块测试"/>-->
+            <TextView
+                android:id="@+id/testTv"
+                style="@style/text_type"
+                android:text="临时测试内容,看日志输出"/>
+
+
+            <TextView
+                android:id="@+id/goto_activity"
+                style="@style/text_type"
+                android:text="Activity测试模块"/>
 
             <TextView
                 android:id="@+id/goto_fragment"
                 style="@style/text_type"
                 android:text="Fragment模块测试"/>
-
-            <TextView
-                android:id="@+id/goto_service"
-                style="@style/text_type"
-                android:text="Service测试模块"/>
 
             <TextView
                 android:id="@+id/goto_util"
@@ -72,17 +73,12 @@
                 style="@style/text_type"
                 android:text="Python服务接口"/>
 
-            <!-- 刷新测试-->
+            <!-- UI模块测试-->
             <TextView
                 android:id="@+id/refresh_rl"
                 style="@style/text_type"
                 android:text="UI模块测试"/>
 
-            <!-- 设备相关信息-->
-            <TextView
-                android:id="@+id/mobile_info"
-                style="@style/text_type"
-                android:text="设备相关信息"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -7,10 +7,10 @@
 
     <RelativeLayout style="@style/title_layout">
 
-        <com.manggeek.android.geek.view.BlackBackView
-            android:layout_marginLeft="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+        <com.manggeek.android.geek.view.BackView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
         <TextView
             style="@style/title_text"
             android:text="activity测试种类" />

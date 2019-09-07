@@ -12,19 +12,20 @@ import com.manggeek.android.geek.view.FindViewById;
 import com.manggeek.learndemo.R;
 
 /**
- * Created by zhangshengwei
- * Time: 2018/11/22 15:20
- * describe:
+ * @Description:
+ * @Author: xianggu
+ * @CreateDate: 2019-09-06 17:40
  */
-public class FourFragment extends GeekFragment {
+public class FiveFragment extends GeekFragment {
 
-    private @FindViewById(id = R.id.content) TextView contentTv;
+    private @FindViewById(id = R.id.content)
+    TextView contentTv;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = setContentView(inflater, R.layout.fragment_number_content, container, false);
-        contentTv.setText("是第二页  1  的Fragment");
+        contentTv.setText("是第二页  2  的Fragment");
         return view;
     }
 }

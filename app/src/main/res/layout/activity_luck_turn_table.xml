@@ -1,28 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout style="@style/title_layout">
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        style="@style/title_layout"
+        android:visibility="gone">
 
         <com.manggeek.android.geek.view.BlackBackView
+            android:id="@+id/back"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
         <TextView
+            android:id="@+id/text"
             style="@style/title_text"
             android:text="幸运大转盘" />
     </RelativeLayout>
 
 
-    <View
+
+    <TextView
+        android:id="@+id/move_item"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorLine"/>
+        android:layout_height="50dp"
+        android:text="tejfaew"
+        android:background="@color/coloFaintYellow"/>
 
 
 
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/topTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="顶部"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/centerTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="中间"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/bottomTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="底部"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

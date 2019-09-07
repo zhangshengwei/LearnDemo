@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffff">
 
     <RelativeLayout style="@style/title_layout">
         <com.manggeek.android.geek.view.BlackBackView
@@ -30,11 +31,7 @@
             <TextView
                 android:id="@+id/refresh_loadmore"
                 style="@style/text_type"
-                android:text="RefreshAndLoadMore"/>
-            <TextView
-                android:id="@+id/recycler"
-                style="@style/text_type"
-                android:text="RecyclerView"/>
+                android:text="recyclerView + SmartRefreshLayout"/>
 
             <!-- 梯形队列 卡片上下滑动-->
             <TextView
@@ -59,8 +56,18 @@
                 android:id="@+id/luck_turntable"
                 style="@style/text_type"
                 android:text="幸运大转盘"/>
+
+            <!-- 动态移动view位置-->
+            <TextView
+                android:id="@+id/move_view"
+                style="@style/text_type"
+                android:text="动态移动view位置"/>
+
+
         </LinearLayout>
     </ScrollView>
+
+
 
 
 </LinearLayout>

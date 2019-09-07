@@ -65,43 +65,10 @@ public class FragmentActivity extends BaseActivity {
 
 
 
-    private boolean isExit = false;
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
-            if (isExit) {
-                ActivityManager.getActivity().finishAll();
-            } else {
-                isExit = true;
-                PrintUtil.toastMakeText(mActivity, "再按一次,退出应用");
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        isExit = false;
-                    }
-                }, 2000);
-            }
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (homeFragment.isVisible()) {
-            homeFragment.initData();
-        }
-        if (secondFragment.isVisible()) {
-            secondFragment.initData();
-        }
-        if (thirdFragment.isVisible()) {
-            thirdFragment.initData();
-        }
-        if (mineFragment.isVisible()) {
-            mineFragment.initData();
-        }
-
     }
 }
