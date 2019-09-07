@@ -49,8 +49,6 @@ public class TwoFragment extends GeekFragment implements ViewPager.OnPageChangeL
         return view;
     }
 
-
-
     private void initFragments() {
         threeFragment = new ThreeFragment();
         fourFragment = new FourFragment();
