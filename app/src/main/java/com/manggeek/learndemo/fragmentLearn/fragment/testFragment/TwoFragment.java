@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.manggeek.android.geek.GeekFragment;
 import com.manggeek.android.geek.view.FindViewById;
+import com.manggeek.learndemo.Entity.Student;
 import com.manggeek.learndemo.R;
 import com.manggeek.learndemo.View.ChildViewPager;
 
@@ -50,9 +51,21 @@ public class TwoFragment extends GeekFragment implements ViewPager.OnPageChangeL
     }
 
     private void initFragments() {
+
         threeFragment = new ThreeFragment();
+        Bundle bundle3 = new Bundle();
+        bundle3.putString("data","2-1");
+        threeFragment.setArguments(bundle3);
+
         fourFragment = new FourFragment();
+        Bundle bundle4 = new Bundle();
+        bundle4.putString("data","2-2");
+        fourFragment.setArguments(bundle4);
+
         fiveFragment = new FiveFragment();
+        Bundle bundle5 = new Bundle();
+        bundle5.putString("data","2-3");
+        fiveFragment.setArguments(bundle5);
 
         fragmentArrayList.add(threeFragment);
         fragmentArrayList.add(fourFragment);
@@ -61,6 +74,8 @@ public class TwoFragment extends GeekFragment implements ViewPager.OnPageChangeL
         viewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
         viewPager.addOnPageChangeListener(this);
         viewPager.setOffscreenPageLimit(fragmentArrayList.size());
+
+
     }
 
 

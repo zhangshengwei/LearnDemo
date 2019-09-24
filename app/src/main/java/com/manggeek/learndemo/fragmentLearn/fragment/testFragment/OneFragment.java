@@ -15,6 +15,7 @@ import android.widget.RadioGroup;
 import com.manggeek.android.geek.GeekFragment;
 import com.manggeek.android.geek.view.FindViewById;
 import com.manggeek.learndemo.R;
+import com.manggeek.learndemo.View.ChildViewPager;
 
 import java.util.ArrayList;
 
@@ -28,7 +29,7 @@ public class OneFragment extends GeekFragment implements ViewPager.OnPageChangeL
     private static final String TAG = "---->>OneFragment";
 
     private @FindViewById(id = R.id.two_option) RadioGroup towOption;
-    private @FindViewById(id = R.id.viewpager_second) ViewPager viewPager;
+    private @FindViewById(id = R.id.viewpager_second) ChildViewPager viewPager;
 
 
     private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
@@ -50,8 +51,19 @@ public class OneFragment extends GeekFragment implements ViewPager.OnPageChangeL
 
     private void initFragments() {
         threeFragment = new ThreeFragment();
+        Bundle bundle3 = new Bundle();
+        bundle3.putString("data","1-1");
+        threeFragment.setArguments(bundle3);
+
         fourFragment = new FourFragment();
+        Bundle bundle4 = new Bundle();
+        bundle4.putString("data","1-2");
+        fourFragment.setArguments(bundle4);
+
         fiveFragment = new FiveFragment();
+        Bundle bundle5 = new Bundle();
+        bundle5.putString("data","1-3");
+        fiveFragment.setArguments(bundle5);
 
         fragmentArrayList.add(threeFragment);
         fragmentArrayList.add(fourFragment);

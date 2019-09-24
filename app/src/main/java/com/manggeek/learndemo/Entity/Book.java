@@ -15,6 +15,8 @@ public class Book {
         this.picture = picture;
         this.name = name;
     }
+
+
     public Book(){}
 
     public String getName() {
@@ -35,4 +37,6 @@ public class Book {
     public void setPicture(String picture) {
         this.picture = picture;
     }
+
+
 }

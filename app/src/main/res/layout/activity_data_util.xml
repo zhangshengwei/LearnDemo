@@ -60,7 +60,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:gravity="left"
-            android:text="json数据解析"/>
+            android:text="json数据解析"
+            android:textIsSelectable="true"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"

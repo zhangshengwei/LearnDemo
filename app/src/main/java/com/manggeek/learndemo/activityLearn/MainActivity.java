@@ -15,6 +15,7 @@ import com.manggeek.android.geek.utils.PrintUtil;
 import com.manggeek.android.geek.view.FindViewById;
 import com.manggeek.learndemo.Bo.NewResultCallBack;
 import com.manggeek.learndemo.Bo.TestBo;
+import com.manggeek.learndemo.Entity.Student;
 import com.manggeek.learndemo.R;
 import com.manggeek.learndemo.control.BaseActivity;
 
@@ -34,6 +35,8 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        Student student = new Student.Builder("小明","18").address("天街").phone("110").build();
     }
 
     private void initView() {

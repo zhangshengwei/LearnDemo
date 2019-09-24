@@ -2,6 +2,7 @@ package com.manggeek.learndemo.fragmentLearn.fragment.testFragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,11 @@ public class FourFragment extends GeekFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = setContentView(inflater, R.layout.fragment_number_content, container, false);
-        contentTv.setText("是第二页  1  的Fragment");
+        String data = getArguments().getString("data");
+        if (TextUtils.isEmpty(data)){
+            data = "是第  4  的Fragment";
+        }
+        contentTv.setText(data);
         return view;
     }
 }
